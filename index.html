@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SereneEditorial | Apoio Especializado em Saúde Mental</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#dcfaf7",
+              "primary-container": "#bcece3",
+              "error": "#a83836",
+              "on-primary-fixed-variant": "#37635c",
+              "background": "#faf9f5",
+              "on-error-container": "#6e0a12",
+              "surface": "#faf9f5",
+              "on-background": "#30332f",
+              "secondary-fixed-dim": "#bfd8e5",
+              "on-tertiary-fixed-variant": "#506b6a",
+              "on-tertiary": "#e1fffd",
+              "on-secondary": "#f2faff",
+              "on-primary-fixed": "#184640",
+              "surface-variant": "#e1e3dd",
+              "primary-fixed": "#bcece3",
+              "error-dim": "#67040d",
+              "surface-container-low": "#f4f4ef",
+              "secondary": "#4b626e",
+              "on-error": "#fff7f6",
+              "surface-container-highest": "#e1e3dd",
+              "inverse-on-surface": "#9d9d9a",
+              "surface-dim": "#d9dbd4",
+              "on-secondary-fixed-variant": "#475f6a",
+              "surface-tint": "#3a6760",
+              "tertiary-dim": "#3d5857",
+              "primary-dim": "#2e5b54",
+              "outline": "#797b76",
+              "tertiary-container": "#dcfaf7",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#496463",
+              "on-secondary-fixed": "#2b424d",
+              "on-secondary-container": "#3e5560",
+              "on-tertiary-container": "#46615f",
+              "secondary-dim": "#3f5661",
+              "error-container": "#fa746f",
+              "on-surface": "#30332f",
+              "on-surface-variant": "#5d605b",
+              "on-primary-container": "#2c5952",
+              "secondary-container": "#cde6f4",
+              "on-primary": "#e2fff8",
+              "surface-bright": "#faf9f5",
+              "primary": "#3a6760",
+              "primary-fixed-dim": "#afded4",
+              "inverse-primary": "#c8f8ee",
+              "on-tertiary-fixed": "#344e4d",
+              "outline-variant": "#b0b3ad",
+              "inverse-surface": "#0d0f0d",
+              "surface-container-high": "#e8e9e3",
+              "surface-container": "#eeeee9",
+              "tertiary-fixed-dim": "#ceebe9",
+              "secondary-fixed": "#cde6f4"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(250, 249, 245, 0.8);
+        }
+        .tonal-transition { transition: background-color 0.3s ease; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="spa">spa</span>
+<span class="text-2xl font-serif italic text-[#30332f]">SereneEditorial</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#metodo">Método</a>
+<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#especialista">Especialista</a>
+<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#faq">Dúvidas</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:bg-primary-dim transition-all duration-300" href="#agendar">Book Session</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20 md:pt-24">
+<!-- Section 1: Hero -->
+<section class="relative px-8 py-12 md:py-32 max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12 items-center">
+<div class="md:col-span-7">
+<span class="inline-block py-1 px-4 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">Saúde Mental &amp; Bem-estar</span>
+<h1 class="font-headline text-4xl md:text-7xl text-on-surface leading-[1.15] mb-6 md:mb-8">
+                    Encontre apoio especializado para gerenciar sintomas de <span class="serif-italic text-primary">ansiedade</span> e melhorar sua qualidade de vida
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-8 md:mb-10 leading-relaxed">
+                    Um ambiente seguro e acolhedor para você construir novos caminhos e recuperar o equilíbrio emocional com suporte clínico de alta performance.
+                </p>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="close-up portrait of a smiling woman with natural lighting and soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHM8hT5QRKB7xRdyorgkvSdEIMu5CAmIBWm3gvyZ6vvCHbza5T8lGtlqmQ63Hu_vhjplyMCMV8xmfRtobbfenUZRSyjwz4aXvkdSHeOPEdAprglTdZcoVx9c_LY8CGqEFLvGixAuhV8mamIXzeKn1cP36P0b1cIFLh6N_8sQRrqx9U03_IbNK5Ia4qhG8eI9fUQ7Uv3wBFlNfvJwerfOCWgdeEKy35J_YOmoQRrqjRCsX8zOjjbkjFeGzbxCWvgQsPk8trs0kcClw"/>
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="professional headshot of a man with spectacles in a bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIn2neF3ISAAwDm0lduwN9SgIKCPeJsiy2FND7IThYq31NUjvzBWqINwjlcwfxPgJ5HH_DBbSRxGMgh-ZBY8YawCs-g2PfI57e1XxHCeSHCuJURz-Qg6ul7JI8zmGcX55niy548RkxTM-h5njfw0iAOIRSQWjqoCe3j0l0uwl0lWss1g7-FdyI94g7hU61d6B-FZcCAjz7qh1FlAkz0ZDeyI2fKri-36X2DxIZHJN7E8UH4fjjNCo11EhSgZDCLM3qZ8fIAafAkzY"/>
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="candid portrait of a thoughtful person looking away with warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSroJulSghSQ6UJSi_ooEn1M7Rwp9tuc7Ujg2PxASs3BafFcX5kmzGQgiYnTGL95oMGWioN0AQlgBAaAXi9U5TUzz5OABY72cvVB2_hE_u_GbjNOpglZAqGAz1ni3NrVNaT0Ek56wfIPezXvp5tCWd9LtnQZsygGrbLpGso6aNuvQuhNtWKP9sJ1KkkBm6ChLnf-J2ezOAH2I3OXN_AjlWLqJAM1oe7LIT5NoRpLyomO5iYzh96Qq9NgMVbj31sV9yUuLRITJb694"/>
+</div>
+<span class="text-xs md:text-sm">+500 vidas transformadas este ano</span>
+</div>
+</div>
+<div class="md:col-span-5" id="agendar">
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-[0_20px_40px_rgba(48,51,47,0.06)]">
+<h3 class="font-headline text-2xl mb-6 text-on-surface">Agende sua consulta agora</h3>
+<form class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">Nome Completo</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="Como podemos te chamar?" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">WhatsApp</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">E-mail</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="seuemail@exemplo.com" type="email"/>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-bold text-lg hover:bg-primary-dim transition-all duration-300 mt-4 shadow-lg shadow-primary/20">
+                            Solicitar Atendimento
+                        </button>
+</form>
+<p class="text-[10px] text-center text-outline mt-6 uppercase tracking-widest">Garantimos o sigilo total dos seus dados</p>
+</div>
+</div>
+</section>
+<!-- Section 2: 3 Characteristics -->
+<section class="bg-surface-container-low py-20 px-8">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="bolt">bolt</span>
+</div>
+<h4 class="font-headline text-xl mb-3">Agilidade no Atendimento</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Resposta rápida para momentos de crise e agendamentos flexíveis para sua rotina.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="person_heart">person_heart</span>
+</div>
+<h4 class="font-headline text-xl mb-3">Apoio Personalizado</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Planos terapêuticos desenhados especificamente para seu histórico e necessidades únicas.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="school">school</span>
+</div>
+<h4 class="font-headline text-xl mb-3">Profissionais Especializados</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Equipe com formação acadêmica rigorosa e anos de prática clínica comprovada.</p>
+</div>
+</div>
+</section>
+<!-- Section 3 & 4: Problem & Benefits -->
+<section class="py-24 px-8 max-w-7xl mx-auto overflow-hidden" id="metodo">
+<div class="grid md:grid-cols-2 gap-16 md:gap-20 items-center mb-24 md:mb-32">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-tertiary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<img class="rounded-xl shadow-2xl object-cover aspect-[4/5]" data-alt="minimalist interior of a therapist office with a comfortable chair and soft neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ojo0bKMXv3YBP5650XLN8el9YTp1kkIHkdx6_dWwNNdaP7VJ-7VQH7iR4R4aKtFJEwhJfZ2eq90F96aEWVa9uln9lKcaTTSx_efTK4FmMI5BBL1vaL5lp3lYp-8ijCCLWx4jYDUoC_KXUkfdGurf1fs2bbHoDyl4eGN8mTGtE1Bd8avtBSaZd7u8vx-xJFE17pog1-PZ871sg_qsjP2EQ9FDm_R5dHLxYZn2HdMD5nHjmcaTS7M7P6yqiP4BSagIjN0kHEW3lsk"/>
+<div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs">
+<p class="text-primary italic font-serif text-lg">"O primeiro passo para a mudança é a consciência do que estamos sentindo."</p>
+</div>
+</div>
+<div class="md:pl-12">
+<h2 class="font-headline text-4xl mb-6">Você sente um cansaço constante ou vazio?</h2>
+<p class="text-lg text-on-surface-variant mb-12">
+                        Consultas especializadas para identificar e tratar os sintomas que impactam seu bem-estar diário. Não permita que a exaustão emocional defina quem você é.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<div>
+<h5 class="font-bold mb-1">Mais Equilíbrio Emocional</h5>
+<p class="text-sm text-on-surface-variant">Estabilidade para lidar com os desafios.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<div>
+<h5 class="font-bold mb-1">Autoconhecimento</h5>
+<p class="text-sm text-on-surface-variant">Entenda seus gatilhos e reações.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<div>
+<h5 class="font-bold mb-1">Ferramentas Práticas</h5>
+<p class="text-sm text-on-surface-variant">Estratégias para usar no dia a dia.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<div>
+<h5 class="font-bold mb-1">Acompanhamento Seguro</h5>
+<p class="text-sm text-on-surface-variant">Sigilo absoluto e suporte contínuo.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: For Whom -->
+<section class="bg-secondary-container/20 py-24 px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-4xl mb-8">Para quem é este espaço?</h2>
+<div class="bg-surface-container-lowest p-10 rounded-2xl text-left border-l-4 border-primary">
+<p class="text-xl leading-relaxed text-on-surface-variant mb-0 italic">
+                        "Ideal para você que sente que precisa de um espaço acolhedor para desabafar, organizar seus pensamentos e encontrar ferramentas científicas para lidar com a ansiedade, o estresse profissional ou transições difíceis na vida pessoal."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 6: Authority -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="especialista">
+<div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<h2 class="font-headline text-4xl mb-2">Dr. Carlos da Rosa</h2>
+<p class="text-primary font-bold tracking-widest uppercase text-xs mb-6">Psiquiatra Especialista em Transtornos de Humor</p>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>Com mais de 20 anos de experiência clínica, o Dr. Carlos dedica sua carreira a integrar os avanços da neurociência com uma abordagem profundamente humanizada.</p>
+<p>Sua metodologia foca não apenas no alívio de sintomas, mas na reestruturação da qualidade de vida e na construção de resiliência emocional duradoura.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
+<span class="block text-xl md:text-2xl font-bold text-primary">20+</span>
+<span class="text-[9px] uppercase font-bold text-outline">Anos de Exp.</span>
+</div>
+<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
+<span class="block text-xl md:text-2xl font-bold text-primary">5k+</span>
+<span class="text-[9px] uppercase font-bold text-outline">Consultas</span>
+</div>
+<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
+<span class="block text-xl md:text-2xl font-bold text-primary">12</span>
+<span class="text-[9px] uppercase font-bold text-outline">Publicações</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<img class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 aspect-video object-cover" data-alt="professional portrait of a male doctor in his fifties with a friendly expression in a modern clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcOTv94sF5ojTjv2Ix_eh1lQ3a48W7bF1EjFHi43fcYUljl42oTBRmJvmkNPWOiwxGXGLxM-gVmC0oYw4Lvey5fYrSGbQHxbCa53CWsQQB5JxNoyvn3PHaBbEuR5NgzS_lronI4dSEdISOREOzp7H86A4Tdyj37EhaLzbvlcCfoKMlB4CaYUGdJ66Ir_oQXaZ4FULC8XB1yWZhdu_9Z3FT5IJCbybzkoVs8r_fIrWnL4lMLrNbeZEmfi81HWY68f-HwA38FcYX4iM"/>
+</div>
+</div>
+</section>
+<!-- Section 7 & 8: Deliverables & Bonus (Bento Grid) -->
+<section class="bg-surface py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl mb-4">O que está incluso no seu processo</h2>
+<p class="text-on-surface-variant">Muito além de uma hora de conversa: um ecossistema de cuidado.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-full md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low p-10 rounded-2xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="assignment">assignment</span>
+<h3 class="font-headline text-2xl mb-4">Anamnese Completa &amp; Plano Terapêutico</h3>
+<p class="text-on-surface-variant">Mapeamento profundo do seu histórico biológico e emocional para um diagnóstico preciso e metas claras.</p>
+</div>
+<div class="mt-8 bg-surface-container-highest p-4 rounded-xl border-l-4 border-primary">
+<p class="text-xs font-bold uppercase text-primary">Destaque</p>
+<p class="text-sm">Personalização total baseada em evidências científicas.</p>
+</div>
+</div>
+<div class="md:col-span-1 bg-primary text-on-primary p-8 rounded-2xl flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-3xl mb-4" data-icon="chat">chat</span>
+<h4 class="font-bold mb-2">WhatsApp Direto</h4>
+<p class="text-xs opacity-90">Acesso para dúvidas e suporte entre sessões.</p>
+</div>
+<div class="md:col-span-1 bg-surface-container-highest p-8 rounded-2xl flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="calendar_today">calendar_today</span>
+<h4 class="font-bold mb-2">Flexibilidade</h4>
+<p class="text-xs text-on-surface-variant">Reagendamentos e horários estendidos.</p>
+</div>
+<div class="md:col-span-2 bg-tertiary-fixed p-8 rounded-2xl flex items-center gap-8">
+<div class="bg-surface-container-lowest p-4 rounded-xl shrink-0">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="featured_play_list">featured_play_list</span>
+</div>
+<div>
+<h4 class="font-bold text-on-tertiary-fixed mb-1">Bônus Exclusivos</h4>
+<ul class="text-sm text-on-tertiary-fixed-variant space-y-1">
+<li>• Material Complementar (PDFs)</li>
+<li>• Áudios de Meditação Guiada</li>
+<li>• Ligação de Emergência 24h</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Offer with Carl Rogers Portrait -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-6xl mx-auto bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<div class="md:w-1/2 p-12 md:p-16 flex flex-col justify-center bg-primary text-on-primary relative overflow-hidden">
+<img alt="Carl Rogers Portrait" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay scale-110 pointer-events-none" src="https://lh3.googleusercontent.com/aida/ADBb0uiBQWQ-O3Qg1EuFNHGiE3J3ZGjfcjkAC3udBcA4A3BruBPwC-ZoBuZ159_-zeSJmIV_GRxwEM9gLfIGTlOY-bYfMPY8pkrB31IvPBrePQVhnX2nirUIAainyzUx4_sDXkiix6lsftqS-rToRpMctItwxARxMFvhRY6T6Tx7n7UcEKJg8RSKi7zw8o_fVQ_u_Z0j88AlOAKCW8T4ix-oobDfQyaFrDzSoq67r8giJc8IrUwzhAZq8mDaCU0CXXTj_e7hvlIrmyVA"/>
+<div class="relative z-10">
+<div class="flex items-center gap-6 mb-8">
+<img alt="Carl Rogers Portrait Small" class="w-16 h-16 rounded-full border-2 border-on-primary/30 object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida/ADBb0uiBQWQ-O3Qg1EuFNHGiE3J3ZGjfcjkAC3udBcA4A3BruBPwC-ZoBuZ159_-zeSJmIV_GRxwEM9gLfIGTlOY-bYfMPY8pkrB31IvPBrePQVhnX2nirUIAainyzUx4_sDXkiix6lsftqS-rToRpMctItwxARxMFvhRY6T6Tx7n7UcEKJg8RSKi7zw8o_fVQ_u_Z0j88AlOAKCW8T4ix-oobDfQyaFrDzSoq67r8giJc8IrUwzhAZq8mDaCU0CXXTj_e7hvlIrmyVA"/>
+<span class="material-symbols-outlined text-5xl opacity-40" data-icon="format_quote">format_quote</span>
+</div>
+<blockquote class="text-2xl font-serif italic mb-8 leading-relaxed">
+                        "O curioso paradoxo é que quando eu me aceito como eu sou, então eu posso mudar."
+                    </blockquote>
+<cite class="not-italic font-bold tracking-widest uppercase text-xs opacity-80">— Carl Rogers</cite>
+</div>
+</div>
+<div class="md:w-1/2 p-12 md:p-16 flex flex-col justify-center">
+<h3 class="font-headline text-3xl mb-6">Sua jornada para mais equilíbrio começa aqui</h3>
+<p class="text-on-surface-variant mb-10">Agende sua avaliação inicial e descubra como a ciência e a empatia podem transformar sua saúde mental.</p>
+<a class="inline-block text-center bg-primary text-on-primary py-5 px-8 rounded-full font-bold text-xl hover:bg-primary-dim transition-all shadow-xl shadow-primary/20" href="#agendar">
+                        Agendar minha consulta
+                    </a>
+<div class="flex items-center justify-center gap-6 mt-10">
+<img class="w-12 h-12 rounded-full grayscale opacity-50" data-alt="logo of a psychological association in a clean minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQPNqibUpR78g24j75iHKx3WcecU_w-IcaaD2sFi18PcS5BSymCytVuq7UAMoRyZYZ1bbJZXkiWwrs_DgbQhkfSfgONEM_AFxdZ8tjszDylVfaX8gTnIyOwC9luVuGgju-EGdWNTjqdNqao8dd9GGuOGUe_VlcowLGpT3rSl4CVQoDHEr2TvRM3BW0t6q03F7FNxy-wnVsWpgAOwFfv86o4uNfCbiuMOyzhGxIbYSlVDfPYiXkld1b-V-erUpxywjw6YH7QOl2M4"/>
+<img class="w-12 h-12 rounded-full grayscale opacity-50" data-alt="badge for health and wellness excellence in soft grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM63SWifMSsEMm7rwrQYidcJDcdhFY7Br5cX0FkkErORxX68PN-JfY1Wdio695yccXrGw5n8CvW1tthChin86rfBvbzq7WdplXvYDcDMLyEfb9ZCpPCr-xQWp04fh0wQigQLRz8GdczCG6wKdpWeJIG7rkEuEeoh0VPfY12lUf0arSLTTCkYw45cPxxIONnSw7zHmu0Krrl1xacfSR-RBqtYyy2fRaM8s99LqwSej_F_eTf_sgFUjpVb0V83iGkwBtU0bYv5Trd3I"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: FAQ -->
+<section class="py-24 px-8 max-w-4xl mx-auto" id="faq">
+<h2 class="font-headline text-4xl text-center mb-16">Dúvidas Frequentes</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>Como funcionam as sessões?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm">
+                        As sessões têm duração de 50 minutos e podem ser realizadas de forma presencial ou online via plataforma segura com criptografia de ponta a ponta.
+                    </div>
+</details>
+<details class="group bg-surface-container rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>Vocês aceitam planos de saúde?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm">
+                        Trabalhamos no modelo de reembolso. Fornecemos toda a documentação necessária para que você solicite o valor integral ou parcial junto à sua operadora.
+                    </div>
+</details>
+<details class="group bg-surface-container rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>Qual a periodicidade das consultas?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm">
+                        A frequência é definida após a avaliação inicial, podendo ser semanal, quinzenal ou de acordo com a necessidade clínica específica do paciente.
+                    </div>
+</details>
+<details class="group bg-surface-container rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>O atendimento é sigiloso?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm">
+                        Sim, seguimos rigorosamente o código de ética profissional, garantindo total privacidade e sigilo absoluto sobre todas as informações compartilhadas.
+                    </div>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4ef] py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
+<div>
+<span class="text-xl font-serif text-[#30332f] block mb-4 italic">SereneEditorial</span>
+<p class="text-[#3a6760] text-sm leading-relaxed mb-6">
+                    © 2024 SereneEditorial. Professional Psychological Care. CRM/PR 00000 | RQE 0000.
+                </p>
+<div class="flex gap-4">
+<a class="text-[#30332f]/60 hover:text-[#3a6760]" href="#"><span class="material-symbols-outlined" data-icon="brand_awareness">brand_awareness</span></a>
+<a class="text-[#30332f]/60 hover:text-[#3a6760]" href="#"><span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-lg mb-4">Recursos</h4>
+<ul class="space-y-2 text-sm text-[#30332f]/60">
+<li><a class="hover:text-[#3a6760]" href="#">DSM-5 Resources</a></li>
+<li><a class="hover:text-[#3a6760]" href="#">Blog de Saúde Mental</a></li>
+<li><a class="hover:text-[#3a6760]" href="#">Teste de Ansiedade</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg mb-4">Links Úteis</h4>
+<ul class="space-y-2 text-sm text-[#30332f]/60">
+<li><a class="hover:text-[#3a6760]" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-[#3a6760]" href="#">Terms of Service</a></li>
+<li><a class="underline text-[#3a6760]" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
