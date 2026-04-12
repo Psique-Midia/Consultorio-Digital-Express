@@ -1,420 +1,388 @@
 <!DOCTYPE html>
 
-<html class="light" lang="pt-BR"><head>
+<html class="scroll-smooth" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SereneEditorial | Apoio Especializado em Saúde Mental</title>
+<title>Psique Mídia - Consultório Digital Express</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "tertiary-fixed": "#dcfaf7",
-              "primary-container": "#bcece3",
-              "error": "#a83836",
-              "on-primary-fixed-variant": "#37635c",
-              "background": "#faf9f5",
-              "on-error-container": "#6e0a12",
-              "surface": "#faf9f5",
-              "on-background": "#30332f",
-              "secondary-fixed-dim": "#bfd8e5",
-              "on-tertiary-fixed-variant": "#506b6a",
-              "on-tertiary": "#e1fffd",
-              "on-secondary": "#f2faff",
-              "on-primary-fixed": "#184640",
-              "surface-variant": "#e1e3dd",
-              "primary-fixed": "#bcece3",
-              "error-dim": "#67040d",
-              "surface-container-low": "#f4f4ef",
-              "secondary": "#4b626e",
-              "on-error": "#fff7f6",
-              "surface-container-highest": "#e1e3dd",
-              "inverse-on-surface": "#9d9d9a",
-              "surface-dim": "#d9dbd4",
-              "on-secondary-fixed-variant": "#475f6a",
-              "surface-tint": "#3a6760",
-              "tertiary-dim": "#3d5857",
-              "primary-dim": "#2e5b54",
-              "outline": "#797b76",
-              "tertiary-container": "#dcfaf7",
-              "surface-container-lowest": "#ffffff",
-              "tertiary": "#496463",
-              "on-secondary-fixed": "#2b424d",
-              "on-secondary-container": "#3e5560",
-              "on-tertiary-container": "#46615f",
-              "secondary-dim": "#3f5661",
-              "error-container": "#fa746f",
-              "on-surface": "#30332f",
-              "on-surface-variant": "#5d605b",
-              "on-primary-container": "#2c5952",
-              "secondary-container": "#cde6f4",
-              "on-primary": "#e2fff8",
-              "surface-bright": "#faf9f5",
-              "primary": "#3a6760",
-              "primary-fixed-dim": "#afded4",
-              "inverse-primary": "#c8f8ee",
-              "on-tertiary-fixed": "#344e4d",
-              "outline-variant": "#b0b3ad",
-              "inverse-surface": "#0d0f0d",
-              "surface-container-high": "#e8e9e3",
-              "surface-container": "#eeeee9",
-              "tertiary-fixed-dim": "#ceebe9",
-              "secondary-fixed": "#cde6f4"
-            },
-            fontFamily: {
-              "headline": ["Newsreader", "serif"],
-              "body": ["Manrope", "sans-serif"],
-              "label": ["Manrope", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#4d203e",
+                      "on-surface": "#141d23",
+                      "surface-container-high": "#e0e9f2",
+                      "outline": "#73777e",
+                      "on-tertiary-fixed": "#340a29",
+                      "secondary-fixed-dim": "#f3bd72",
+                      "inverse-on-surface": "#e9f2fa",
+                      "primary-fixed": "#cee5ff",
+                      "on-tertiary-fixed-variant": "#673656",
+                      "tertiary-fixed-dim": "#f4b3d9",
+                      "on-primary-fixed-variant": "#2a4965",
+                      "on-primary-container": "#7c9aba",
+                      "on-error-container": "#93000a",
+                      "primary": "#001d32",
+                      "on-tertiary-container": "#c286aa",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#fcc579",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#293238",
+                      "tertiary-fixed": "#ffd8ec",
+                      "on-background": "#141d23",
+                      "primary-container": "#10324d",
+                      "surface-container": "#e6eff7",
+                      "surface-dim": "#d2dbe3",
+                      "secondary-fixed": "#ffddb3",
+                      "on-secondary-fixed": "#291800",
+                      "error": "#ba1a1a",
+                      "surface-tint": "#43617e",
+                      "outline-variant": "#c3c7ce",
+                      "on-secondary-container": "#77500d",
+                      "on-surface-variant": "#43474d",
+                      "background": "#f5faff",
+                      "on-secondary-fixed-variant": "#633f00",
+                      "surface": "#f5faff",
+                      "inverse-primary": "#abcaeb",
+                      "secondary": "#7f5614",
+                      "tertiary": "#340a28",
+                      "primary-fixed-dim": "#abcaeb",
+                      "on-primary-fixed": "#001d33",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#ecf5fd",
+                      "surface-variant": "#dbe4ec",
+                      "surface-container-highest": "#dbe4ec",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#f5faff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Newsreader"
+                      ],
+                      "body": [
+                              "Manrope"
+                      ],
+                      "label": [
+                              "Manrope"
+                      ]
+              }
+      },
           },
-        },
-      }
+        }
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            background-color: rgba(250, 249, 245, 0.8);
-        }
-        .tonal-transition { transition: background-color 0.3s ease; }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Newsreader', serif; }
     </style>
 <style>
     body {
       min-height: max(884px, 100dvh);
     }
   </style>
-</head>
-<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  </head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 <!-- TopAppBar -->
-<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="spa">spa</span>
-<span class="text-2xl font-serif italic text-[#30332f]">SereneEditorial</span>
+<header class="fixed top-0 w-full z-50 bg-slate-50/60 dark:bg-slate-950/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sky-900 dark:text-sky-100" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="text-xl font-bold text-sky-950 dark:text-sky-50 font-serif tracking-tight">Psique Mídia</span>
 </div>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#metodo">Método</a>
-<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#especialista">Especialista</a>
-<a class="text-[#30332f]/70 hover:text-[#3a6760] transition-colors duration-300 font-medium" href="#faq">Dúvidas</a>
-<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:bg-primary-dim transition-all duration-300" href="#agendar">Book Session</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-sky-900/70 dark:text-sky-100/70 hover:text-amber-600 transition-colors font-semibold" href="#features">Diferenciais</a>
+<a class="text-sky-900/70 dark:text-sky-100/70 hover:text-amber-600 transition-colors" href="#benefits">Benefícios</a>
+<a class="text-sky-900/70 dark:text-sky-100/70 hover:text-amber-600 transition-colors" href="#faq">Dúvidas</a>
 </nav>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
-</button>
+<a class="bg-secondary text-white px-6 py-2 rounded-full font-label text-sm font-bold scale-95 duration-200 hover:opacity-90" href="https://wa.me/">Falar no WhatsApp</a>
 </div>
 </header>
-<main class="pt-20 md:pt-24">
-<!-- Section 1: Hero -->
-<section class="relative px-8 py-12 md:py-32 max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12 items-center">
-<div class="md:col-span-7">
-<span class="inline-block py-1 px-4 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">Saúde Mental &amp; Bem-estar</span>
-<h1 class="font-headline text-4xl md:text-7xl text-on-surface leading-[1.15] mb-6 md:mb-8">
-                    Encontre apoio especializado para gerenciar sintomas de <span class="serif-italic text-primary">ansiedade</span> e melhorar sua qualidade de vida
+<main class="pt-24 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative px-6 py-12 md:py-24 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-primary leading-tight tracking-tight mb-6">
+                    Seu consultório digital pronto em tempo recorde.
                 </h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-8 md:mb-10 leading-relaxed">
-                    Um ambiente seguro e acolhedor para você construir novos caminhos e recuperar o equilíbrio emocional com suporte clínico de alta performance.
+<p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
+                    Consultório Digital Express: uma estrutura profissional de alta conversão desenhada exclusivamente para profissionais da saúde mental.
                 </p>
-<div class="flex items-center gap-4 text-sm text-on-surface-variant">
-<div class="flex -space-x-3">
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="close-up portrait of a smiling woman with natural lighting and soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHM8hT5QRKB7xRdyorgkvSdEIMu5CAmIBWm3gvyZ6vvCHbza5T8lGtlqmQ63Hu_vhjplyMCMV8xmfRtobbfenUZRSyjwz4aXvkdSHeOPEdAprglTdZcoVx9c_LY8CGqEFLvGixAuhV8mamIXzeKn1cP36P0b1cIFLh6N_8sQRrqx9U03_IbNK5Ia4qhG8eI9fUQ7Uv3wBFlNfvJwerfOCWgdeEKy35J_YOmoQRrqjRCsX8zOjjbkjFeGzbxCWvgQsPk8trs0kcClw"/>
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="professional headshot of a man with spectacles in a bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIn2neF3ISAAwDm0lduwN9SgIKCPeJsiy2FND7IThYq31NUjvzBWqINwjlcwfxPgJ5HH_DBbSRxGMgh-ZBY8YawCs-g2PfI57e1XxHCeSHCuJURz-Qg6ul7JI8zmGcX55niy548RkxTM-h5njfw0iAOIRSQWjqoCe3j0l0uwl0lWss1g7-FdyI94g7hU61d6B-FZcCAjz7qh1FlAkz0ZDeyI2fKri-36X2DxIZHJN7E8UH4fjjNCo11EhSgZDCLM3qZ8fIAafAkzY"/>
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="candid portrait of a thoughtful person looking away with warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSroJulSghSQ6UJSi_ooEn1M7Rwp9tuc7Ujg2PxASs3BafFcX5kmzGQgiYnTGL95oMGWioN0AQlgBAaAXi9U5TUzz5OABY72cvVB2_hE_u_GbjNOpglZAqGAz1ni3NrVNaT0Ek56wfIPezXvp5tCWd9LtnQZsygGrbLpGso6aNuvQuhNtWKP9sJ1KkkBm6ChLnf-J2ezOAH2I3OXN_AjlWLqJAM1oe7LIT5NoRpLyomO5iYzh96Qq9NgMVbj31sV9yUuLRITJb694"/>
-</div>
-<span class="text-xs md:text-sm">+500 vidas transformadas este ano</span>
-</div>
-</div>
-<div class="md:col-span-5" id="agendar">
-<div class="bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-[0_20px_40px_rgba(48,51,47,0.06)]">
-<h3 class="font-headline text-2xl mb-6 text-on-surface">Agende sua consulta agora</h3>
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm max-w-md">
 <form class="space-y-4">
 <div>
-<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">Nome Completo</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="Como podemos te chamar?" type="text"/>
+<label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Nome Completo</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg p-3 focus:ring-1 focus:ring-secondary/40" placeholder="Dr(a). Nome Sobrenome" type="text"/>
 </div>
 <div>
-<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">WhatsApp</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="(00) 00000-0000" type="tel"/>
+<label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">WhatsApp</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg p-3 focus:ring-1 focus:ring-secondary/40" placeholder="(00) 00000-0000" type="tel"/>
 </div>
-<div>
-<label class="block text-xs font-bold text-outline mb-1 uppercase tracking-wider">E-mail</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="seuemail@exemplo.com" type="email"/>
-</div>
-<button class="w-full bg-primary text-on-primary py-4 rounded-full font-bold text-lg hover:bg-primary-dim transition-all duration-300 mt-4 shadow-lg shadow-primary/20">
-                            Solicitar Atendimento
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-full font-bold text-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md" type="submit">
+                            Quero meu site agora
                         </button>
 </form>
-<p class="text-[10px] text-center text-outline mt-6 uppercase tracking-widest">Garantimos o sigilo total dos seus dados</p>
 </div>
 </div>
-</section>
-<!-- Section 2: 3 Characteristics -->
-<section class="bg-surface-container-low py-20 px-8">
-<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="bolt">bolt</span>
-</div>
-<h4 class="font-headline text-xl mb-3">Agilidade no Atendimento</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Resposta rápida para momentos de crise e agendamentos flexíveis para sua rotina.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="person_heart">person_heart</span>
-</div>
-<h4 class="font-headline text-xl mb-3">Apoio Personalizado</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Planos terapêuticos desenhados especificamente para seu histórico e necessidades únicas.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="school">school</span>
-</div>
-<h4 class="font-headline text-xl mb-3">Profissionais Especializados</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Equipe com formação acadêmica rigorosa e anos de prática clínica comprovada.</p>
-</div>
-</div>
-</section>
-<!-- Section 3 & 4: Problem & Benefits -->
-<section class="py-24 px-8 max-w-7xl mx-auto overflow-hidden" id="metodo">
-<div class="grid md:grid-cols-2 gap-16 md:gap-20 items-center mb-24 md:mb-32">
 <div class="relative">
-<div class="absolute -top-10 -left-10 w-64 h-64 bg-tertiary-fixed/30 rounded-full blur-3xl -z-10"></div>
-<img class="rounded-xl shadow-2xl object-cover aspect-[4/5]" data-alt="minimalist interior of a therapist office with a comfortable chair and soft neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ojo0bKMXv3YBP5650XLN8el9YTp1kkIHkdx6_dWwNNdaP7VJ-7VQH7iR4R4aKtFJEwhJfZ2eq90F96aEWVa9uln9lKcaTTSx_efTK4FmMI5BBL1vaL5lp3lYp-8ijCCLWx4jYDUoC_KXUkfdGurf1fs2bbHoDyl4eGN8mTGtE1Bd8avtBSaZd7u8vx-xJFE17pog1-PZ871sg_qsjP2EQ9FDm_R5dHLxYZn2HdMD5nHjmcaTS7M7P6yqiP4BSagIjN0kHEW3lsk"/>
-<div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs">
-<p class="text-primary italic font-serif text-lg">"O primeiro passo para a mudança é a consciência do que estamos sentindo."</p>
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-secondary-container/20 blur-3xl rounded-full"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-surface-container-highest">
+<img alt="Digital interface mockup" class="w-full h-auto" data-alt="Modern clean mental health website mockup displayed on a laptop screen with soft blue and gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc2D25-MjampslNkLe5rub_BEfgJM2itxEsfyWinxELYona8bFxOO9DQjCc888t87jjCO9e1bdZIXgIko8g03CWMlMBLQvJVdEni3UfD0sNpwnKR7YV1keUf55F8jYzYy0BKuASh00Pm91taLFOzjFexa-jhRLORBCGIH2a7lG3-edXtlgabg_QV5_JcNzBKIF5vkcQQe2g7jqHpT0l08pEfNc4VISDDqtb-518ltRIhzEmZ63mGq_Eq3a7MBmu_fUpRp5C0W-aQ"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-tertiary text-white p-6 rounded-xl shadow-xl max-w-xs">
+<p class="font-headline italic text-lg">"Transformamos sua presença digital com a autoridade que sua clínica merece."</p>
 </div>
 </div>
-<div class="md:pl-12">
-<h2 class="font-headline text-4xl mb-6">Você sente um cansaço constante ou vazio?</h2>
-<p class="text-lg text-on-surface-variant mb-12">
-                        Consultas especializadas para identificar e tratar os sintomas que impactam seu bem-estar diário. Não permita que a exaustão emocional defina quem você é.
-                    </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
-<div>
-<h5 class="font-bold mb-1">Mais Equilíbrio Emocional</h5>
-<p class="text-sm text-on-surface-variant">Estabilidade para lidar com os desafios.</p>
+</section>
+<!-- Features -->
+<section class="bg-surface-container-low py-20 px-6" id="features">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center space-y-4 group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-secondary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary">Velocidade Express</h3>
+<p class="text-on-surface-variant leading-relaxed">Implementação ágil para que você não perca mais tempo esperando por soluções complexas.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4 group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-secondary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary">Totalmente Personalizado</h3>
+<p class="text-on-surface-variant leading-relaxed">Sua identidade visual e abordagem terapêutica refletidas em cada detalhe do design.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4 group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-secondary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">task_alt</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary">Simplicidade de Gestão</h3>
+<p class="text-on-surface-variant leading-relaxed">Foco no atendimento: nós cuidamos da tecnologia enquanto você cuida das pessoas.</p>
 </div>
 </div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
-<div>
-<h5 class="font-bold mb-1">Autoconhecimento</h5>
-<p class="text-sm text-on-surface-variant">Entenda seus gatilhos e reações.</p>
+</section>
+<!-- Problem/Solution -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8 order-2 lg:order-1">
+<div class="inline-block px-4 py-1 bg-error-container text-on-error-container rounded-full text-xs font-bold tracking-widest uppercase">O Cenário Atual</div>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary">O ciclo vicioso das indicações informais.</h2>
+<p class="text-lg text-on-surface-variant">Depender apenas do "boca a boca" impede o crescimento previsível da sua clínica. Sem uma presença digital estruturada, você perde autoridade para concorrentes menos qualificados, mas melhor posicionados.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error mt-1">cancel</span>
+<span class="text-on-surface-variant">Incerteza sobre o faturamento do próximo mês.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error mt-1">cancel</span>
+<span class="text-on-surface-variant">Perfil do Instagram que não converte em agendamentos.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error mt-1">cancel</span>
+<span class="text-on-surface-variant">Ausência nos resultados de busca do Google.</span>
+</li>
+</ul>
 </div>
+<div class="relative order-1 lg:order-2">
+<div class="aspect-square bg-gradient-to-br from-primary to-primary-container rounded-[2rem] p-12 flex flex-col justify-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">spa</span>
 </div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
-<div>
-<h5 class="font-bold mb-1">Ferramentas Práticas</h5>
-<p class="text-sm text-on-surface-variant">Estratégias para usar no dia a dia.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
-<div>
-<h5 class="font-bold mb-1">Acompanhamento Seguro</h5>
-<p class="text-sm text-on-surface-variant">Sigilo absoluto e suporte contínuo.</p>
-</div>
+<h3 class="text-3xl font-headline font-bold mb-6">A Solução Express</h3>
+<p class="text-lg text-on-primary-container leading-relaxed mb-8">Criamos uma ponte entre seu conhecimento e quem precisa dele. O Consultório Digital Express é a estrutura validada para atrair, conectar e converter pacientes qualificados de forma ética.</p>
+<div class="flex items-center gap-4">
+<div class="h-1 w-12 bg-secondary"></div>
+<span class="font-label text-sm uppercase tracking-widest text-secondary-fixed">Psique Mídia Expertise</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Section 5: For Whom -->
-<section class="bg-secondary-container/20 py-24 px-8">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="font-headline text-4xl mb-8">Para quem é este espaço?</h2>
-<div class="bg-surface-container-lowest p-10 rounded-2xl text-left border-l-4 border-primary">
-<p class="text-xl leading-relaxed text-on-surface-variant mb-0 italic">
-                        "Ideal para você que sente que precisa de um espaço acolhedor para desabafar, organizar seus pensamentos e encontrar ferramentas científicas para lidar com a ansiedade, o estresse profissional ou transições difíceis na vida pessoal."
-                    </p>
-</div>
-</div>
-</section>
-<!-- Section 6: Authority -->
-<section class="py-24 px-8 max-w-7xl mx-auto" id="especialista">
-<div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
-<div class="md:col-span-5 order-2 md:order-1">
-<h2 class="font-headline text-4xl mb-2">Dr. Carlos da Rosa</h2>
-<p class="text-primary font-bold tracking-widest uppercase text-xs mb-6">Psiquiatra Especialista em Transtornos de Humor</p>
-<div class="space-y-6 text-on-surface-variant leading-relaxed">
-<p>Com mais de 20 anos de experiência clínica, o Dr. Carlos dedica sua carreira a integrar os avanços da neurociência com uma abordagem profundamente humanizada.</p>
-<p>Sua metodologia foca não apenas no alívio de sintomas, mas na reestruturação da qualidade de vida e na construção de resiliência emocional duradoura.</p>
-<div class="flex flex-wrap gap-4 pt-4">
-<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
-<span class="block text-xl md:text-2xl font-bold text-primary">20+</span>
-<span class="text-[9px] uppercase font-bold text-outline">Anos de Exp.</span>
-</div>
-<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
-<span class="block text-xl md:text-2xl font-bold text-primary">5k+</span>
-<span class="text-[9px] uppercase font-bold text-outline">Consultas</span>
-</div>
-<div class="text-center px-4 py-2 bg-surface-container rounded-lg flex-1 min-w-[80px]">
-<span class="block text-xl md:text-2xl font-bold text-primary">12</span>
-<span class="text-[9px] uppercase font-bold text-outline">Publicações</span>
-</div>
-</div>
-</div>
-</div>
-<div class="md:col-span-7 order-1 md:order-2">
-<img class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 aspect-video object-cover" data-alt="professional portrait of a male doctor in his fifties with a friendly expression in a modern clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcOTv94sF5ojTjv2Ix_eh1lQ3a48W7bF1EjFHi43fcYUljl42oTBRmJvmkNPWOiwxGXGLxM-gVmC0oYw4Lvey5fYrSGbQHxbCa53CWsQQB5JxNoyvn3PHaBbEuR5NgzS_lronI4dSEdISOREOzp7H86A4Tdyj37EhaLzbvlcCfoKMlB4CaYUGdJ66Ir_oQXaZ4FULC8XB1yWZhdu_9Z3FT5IJCbybzkoVs8r_fIrWnL4lMLrNbeZEmfi81HWY68f-HwA38FcYX4iM"/>
-</div>
-</div>
-</section>
-<!-- Section 7 & 8: Deliverables & Bonus (Bento Grid) -->
-<section class="bg-surface py-24 px-8">
+<!-- Benefits (Asymmetric Grid) -->
+<section class="py-24 px-6 bg-white" id="benefits">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-headline text-4xl mb-4">O que está incluso no seu processo</h2>
-<p class="text-on-surface-variant">Muito além de uma hora de conversa: um ecossistema de cuidado.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-full md:h-[600px]">
-<div class="md:col-span-2 md:row-span-2 bg-surface-container-low p-10 rounded-2xl flex flex-col justify-between">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary text-center mb-16">Por que investir na sua presença profissional?</h2>
+<div class="grid md:grid-cols-12 gap-8">
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-2xl flex flex-col justify-between">
 <div>
-<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="assignment">assignment</span>
-<h3 class="font-headline text-2xl mb-4">Anamnese Completa &amp; Plano Terapêutico</h3>
-<p class="text-on-surface-variant">Mapeamento profundo do seu histórico biológico e emocional para um diagnóstico preciso e metas claras.</p>
-</div>
-<div class="mt-8 bg-surface-container-highest p-4 rounded-xl border-l-4 border-primary">
-<p class="text-xs font-bold uppercase text-primary">Destaque</p>
-<p class="text-sm">Personalização total baseada em evidências científicas.</p>
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">groups</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Fluxo constante de novos contatos</h3>
+<p class="text-on-surface-variant text-lg">Sua clínica aberta 24h por dia, recebendo interessados qualificados que buscam exatamente a sua especialidade.</p>
 </div>
 </div>
-<div class="md:col-span-1 bg-primary text-on-primary p-8 rounded-2xl flex flex-col justify-center text-center">
-<span class="material-symbols-outlined text-3xl mb-4" data-icon="chat">chat</span>
-<h4 class="font-bold mb-2">WhatsApp Direto</h4>
-<p class="text-xs opacity-90">Acesso para dúvidas e suporte entre sessões.</p>
+<div class="md:col-span-4 bg-primary text-white p-10 rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">trending_up</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Previsibilidade Financeira</h3>
+<p class="text-on-primary-container">Saia da montanha-russa de indicações e comece a controlar o crescimento da sua agenda mensal.</p>
 </div>
-<div class="md:col-span-1 bg-surface-container-highest p-8 rounded-2xl flex flex-col justify-center text-center">
-<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="calendar_today">calendar_today</span>
-<h4 class="font-bold mb-2">Flexibilidade</h4>
-<p class="text-xs text-on-surface-variant">Reagendamentos e horários estendidos.</p>
+<div class="md:col-span-5 bg-surface-container-highest p-10 rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">verified</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Autoridade Inquestionável</h3>
+<p class="text-on-surface-variant">Um site profissional comunica seriedade, ética e dedicação à jornada do paciente.</p>
 </div>
-<div class="md:col-span-2 bg-tertiary-fixed p-8 rounded-2xl flex items-center gap-8">
-<div class="bg-surface-container-lowest p-4 rounded-xl shrink-0">
-<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="featured_play_list">featured_play_list</span>
-</div>
+<div class="md:col-span-7 bg-tertiary-fixed p-10 rounded-2xl flex items-center gap-8">
+<img alt="Professional therapist" class="hidden sm:block w-32 h-32 rounded-full object-cover" data-alt="Professional smiling woman psychologist sitting in a modern warm office with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu9gKMJjEZj5stDqYGAgpkRAystVbr3HPemHqpwxan3uTop-505v9b-iyKoJ3DasCdldp_wP9PKdAQ7_O03LcyRiulEYIMvJ9vEiDM7IiW4pW75f7oE6AAWTt31S3RBOgNRusGpEccpl0ru5eJ6EZ2iL7Em88GkXpjrx9roFwTI69tuC02dlRZnZ8-CfcQCWKFmYEhKXMp6S1VfzO_9ldLSlmGOhhMCejV8nKez61B0TMfy_M0kcpIeQePk5YUyP3LzG00ZHiTAQ"/>
 <div>
-<h4 class="font-bold text-on-tertiary-fixed mb-1">Bônus Exclusivos</h4>
-<ul class="text-sm text-on-tertiary-fixed-variant space-y-1">
-<li>• Material Complementar (PDFs)</li>
-<li>• Áudios de Meditação Guiada</li>
-<li>• Ligação de Emergência 24h</li>
+<h3 class="text-2xl font-headline font-bold text-tertiary mb-2">Presença Premium</h3>
+<p class="text-on-tertiary-fixed-variant">Diferencie-se do mercado genérico com uma estética editorial e sofisticada.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Target Audience -->
+<section class="py-24 px-6 bg-primary text-white">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-16">Feito sob medida para:</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-headline font-bold text-secondary mb-2">Psicólogos</h4>
+<p class="text-sm opacity-80">Que buscam nichar seu atendimento e valorizar a sessão.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-headline font-bold text-secondary mb-2">Psiquiatras</h4>
+<p class="text-sm opacity-80">Que precisam de um canal de triagem eficiente e profissional.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-headline font-bold text-secondary mb-2">Terapeutas</h4>
+<p class="text-sm opacity-80">Que desejam organizar sua comunicação e atrair pacientes ideais.</p>
+</div>
+<div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-headline font-bold text-secondary mb-2">Clínicas</h4>
+<p class="text-sm opacity-80">Sem site ou com presença defasada que buscam modernização.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Authority & Deliverables -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-4xl font-headline font-bold text-primary mb-8">Ética e Tecnologia em harmonia.</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                        Na Psique Mídia, entendemos que o marketing para saúde mental requer um cuidado extra. Nossas soluções respeitam rigorosamente os códigos de ética do <strong>CFP e CFM</strong>, além de garantir total conformidade com a <strong>LGPD</strong> para o tratamento de dados dos pacientes.
+                    </p>
+<div class="flex gap-4 mb-12">
+<span class="px-3 py-1 border border-primary/20 rounded text-xs font-bold uppercase tracking-wider text-primary">Compliance LGPD</span>
+<span class="px-3 py-1 border border-primary/20 rounded text-xs font-bold uppercase tracking-wider text-primary">Ética CFP/CFM</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border-l-4 border-secondary">
+<p class="font-headline italic text-lg text-primary">"Não vendemos apenas sites, entregamos uma ferramenta de transformação profissional validada por especialistas."</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10">
+<h3 class="text-2xl font-headline font-bold text-primary mb-8">O que você recebe (Checklist):</h3>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label font-bold text-primary">Site Institucional One-Page Premium</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label font-bold text-primary">Formulário de Triagem Inteligente</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label font-bold text-primary">Integração Direta com WhatsApp</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label font-bold text-primary">Personalização de Cores e Identidade</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label font-bold text-primary">Otimização de Carregamento (SEO Básico)</span>
+</li>
 </ul>
 </div>
 </div>
-</div>
-</div>
 </section>
-<!-- Section 9: Offer with Carl Rogers Portrait -->
-<section class="py-24 px-8 bg-surface-container-low">
-<div class="max-w-6xl mx-auto bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row">
-<div class="md:w-1/2 p-12 md:p-16 flex flex-col justify-center bg-primary text-on-primary relative overflow-hidden">
-<img alt="Carl Rogers Portrait" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay scale-110 pointer-events-none" src="https://lh3.googleusercontent.com/aida/ADBb0uiBQWQ-O3Qg1EuFNHGiE3J3ZGjfcjkAC3udBcA4A3BruBPwC-ZoBuZ159_-zeSJmIV_GRxwEM9gLfIGTlOY-bYfMPY8pkrB31IvPBrePQVhnX2nirUIAainyzUx4_sDXkiix6lsftqS-rToRpMctItwxARxMFvhRY6T6Tx7n7UcEKJg8RSKi7zw8o_fVQ_u_Z0j88AlOAKCW8T4ix-oobDfQyaFrDzSoq67r8giJc8IrUwzhAZq8mDaCU0CXXTj_e7hvlIrmyVA"/>
+<!-- Bonus -->
+<section class="bg-tertiary py-20 px-6">
+<div class="max-w-4xl mx-auto bg-tertiary-container p-10 md:p-16 rounded-[2.5rem] relative overflow-hidden text-center">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-2xl"></div>
 <div class="relative z-10">
-<div class="flex items-center gap-6 mb-8">
-<img alt="Carl Rogers Portrait Small" class="w-16 h-16 rounded-full border-2 border-on-primary/30 object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida/ADBb0uiBQWQ-O3Qg1EuFNHGiE3J3ZGjfcjkAC3udBcA4A3BruBPwC-ZoBuZ159_-zeSJmIV_GRxwEM9gLfIGTlOY-bYfMPY8pkrB31IvPBrePQVhnX2nirUIAainyzUx4_sDXkiix6lsftqS-rToRpMctItwxARxMFvhRY6T6Tx7n7UcEKJg8RSKi7zw8o_fVQ_u_Z0j88AlOAKCW8T4ix-oobDfQyaFrDzSoq67r8giJc8IrUwzhAZq8mDaCU0CXXTj_e7hvlIrmyVA"/>
-<span class="material-symbols-outlined text-5xl opacity-40" data-icon="format_quote">format_quote</span>
-</div>
-<blockquote class="text-2xl font-serif italic mb-8 leading-relaxed">
-                        "O curioso paradoxo é que quando eu me aceito como eu sou, então eu posso mudar."
-                    </blockquote>
-<cite class="not-italic font-bold tracking-widest uppercase text-xs opacity-80">— Carl Rogers</cite>
-</div>
-</div>
-<div class="md:w-1/2 p-12 md:p-16 flex flex-col justify-center">
-<h3 class="font-headline text-3xl mb-6">Sua jornada para mais equilíbrio começa aqui</h3>
-<p class="text-on-surface-variant mb-10">Agende sua avaliação inicial e descubra como a ciência e a empatia podem transformar sua saúde mental.</p>
-<a class="inline-block text-center bg-primary text-on-primary py-5 px-8 rounded-full font-bold text-xl hover:bg-primary-dim transition-all shadow-xl shadow-primary/20" href="#agendar">
-                        Agendar minha consulta
-                    </a>
-<div class="flex items-center justify-center gap-6 mt-10">
-<img class="w-12 h-12 rounded-full grayscale opacity-50" data-alt="logo of a psychological association in a clean minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQPNqibUpR78g24j75iHKx3WcecU_w-IcaaD2sFi18PcS5BSymCytVuq7UAMoRyZYZ1bbJZXkiWwrs_DgbQhkfSfgONEM_AFxdZ8tjszDylVfaX8gTnIyOwC9luVuGgju-EGdWNTjqdNqao8dd9GGuOGUe_VlcowLGpT3rSl4CVQoDHEr2TvRM3BW0t6q03F7FNxy-wnVsWpgAOwFfv86o4uNfCbiuMOyzhGxIbYSlVDfPYiXkld1b-V-erUpxywjw6YH7QOl2M4"/>
-<img class="w-12 h-12 rounded-full grayscale opacity-50" data-alt="badge for health and wellness excellence in soft grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM63SWifMSsEMm7rwrQYidcJDcdhFY7Br5cX0FkkErORxX68PN-JfY1Wdio695yccXrGw5n8CvW1tthChin86rfBvbzq7WdplXvYDcDMLyEfb9ZCpPCr-xQWp04fh0wQigQLRz8GdczCG6wKdpWeJIG7rkEuEeoh0VPfY12lUf0arSLTTCkYw45cPxxIONnSw7zHmu0Krrl1xacfSR-RBqtYyy2fRaM8s99LqwSej_F_eTf_sgFUjpVb0V83iGkwBtU0bYv5Trd3I"/>
+<span class="text-secondary-fixed font-label text-sm uppercase tracking-[0.3em] font-bold mb-4 block">Bônus Exclusivo</span>
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-white mb-6">Consultoria de Captura Estratégica</h2>
+<p class="text-on-tertiary-container text-lg mb-10 leading-relaxed">Além da estrutura técnica, você recebe recomendações práticas de como posicionar seu novo consultório digital para atrair os primeiros pacientes imediatamente após o lançamento.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="bg-white/5 border border-white/10 px-6 py-3 rounded-full text-white text-sm">Scripts de abordagem</div>
+<div class="bg-white/5 border border-white/10 px-6 py-3 rounded-full text-white text-sm">Configuração de Meta Ads</div>
+<div class="bg-white/5 border border-white/10 px-6 py-3 rounded-full text-white text-sm">Estratégia de Nicho</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Section 10: FAQ -->
-<section class="py-24 px-8 max-w-4xl mx-auto" id="faq">
-<h2 class="font-headline text-4xl text-center mb-16">Dúvidas Frequentes</h2>
+<!-- Offer Summary -->
+<section class="py-24 px-6 text-center max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-6">Pronto para o próximo nível?</h2>
+<p class="text-xl text-on-surface-variant mb-12">Consultório Digital Express: Feito por quem entende de saúde para quem vive de cuidar. Sem complicações, sem demora.</p>
+<div class="inline-flex flex-col md:flex-row gap-6 w-full justify-center">
+<a class="bg-secondary text-white text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform shadow-xl" href="#">
+                    Solicitar Orçamento Personalizado
+                </a>
+<a class="bg-surface-container-lowest text-primary text-xl font-bold px-12 py-5 rounded-full border border-primary/10 hover:bg-surface-container transition-colors" href="#">
+                    Falar com Especialista
+                </a>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-24 px-6 bg-surface-container-low" id="faq">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-4xl font-headline font-bold text-primary text-center mb-16">Dúvidas Frequentes</h2>
 <div class="space-y-4">
-<details class="group bg-surface-container rounded-xl overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
-<span>Como funcionam as sessões?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-surface-container-lowest rounded-2xl p-6 border-none cursor-pointer">
+<summary class="flex justify-between items-center font-headline font-bold text-xl text-primary list-none">
+                            É possível personalizar com as minhas cores?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<div class="px-6 pb-6 text-on-surface-variant text-sm">
-                        As sessões têm duração de 50 minutos e podem ser realizadas de forma presencial ou online via plataforma segura com criptografia de ponta a ponta.
-                    </div>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Sim! Embora o Express seja uma estrutura validada, cores, logotipos e toda a sua identidade visual são aplicados para que o site seja genuinamente seu.</p>
 </details>
-<details class="group bg-surface-container rounded-xl overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
-<span>Vocês aceitam planos de saúde?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-surface-container-lowest rounded-2xl p-6 border-none cursor-pointer">
+<summary class="flex justify-between items-center font-headline font-bold text-xl text-primary list-none">
+                            Quanto tempo demora para ficar pronto?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<div class="px-6 pb-6 text-on-surface-variant text-sm">
-                        Trabalhamos no modelo de reembolso. Fornecemos toda a documentação necessária para que você solicite o valor integral ou parcial junto à sua operadora.
-                    </div>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Nosso compromisso "Express" visa entregar a estrutura base em até 7 dias úteis após o envio de todos os seus dados e materiais.</p>
 </details>
-<details class="group bg-surface-container rounded-xl overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
-<span>Qual a periodicidade das consultas?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-surface-container-lowest rounded-2xl p-6 border-none cursor-pointer">
+<summary class="flex justify-between items-center font-headline font-bold text-xl text-primary list-none">
+                            O site segue as normas do CFP/CFM?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<div class="px-6 pb-6 text-on-surface-variant text-sm">
-                        A frequência é definida após a avaliação inicial, podendo ser semanal, quinzenal ou de acordo com a necessidade clínica específica do paciente.
-                    </div>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Absolutamente. Nossa equipe revisa cada conteúdo para garantir que a publicidade seja informativa, sóbria e ética, evitando termos sensacionalistas proibidos pelos conselhos.</p>
 </details>
-<details class="group bg-surface-container rounded-xl overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
-<span>O atendimento é sigiloso?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant text-sm">
-                        Sim, seguimos rigorosamente o código de ética profissional, garantindo total privacidade e sigilo absoluto sobre todas as informações compartilhadas.
-                    </div>
-</details>
+</div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-[#f4f4ef] py-12">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
-<div>
-<span class="text-xl font-serif text-[#30332f] block mb-4 italic">SereneEditorial</span>
-<p class="text-[#3a6760] text-sm leading-relaxed mb-6">
-                    © 2024 SereneEditorial. Professional Psychological Care. CRM/PR 00000 | RQE 0000.
-                </p>
-<div class="flex gap-4">
-<a class="text-[#30332f]/60 hover:text-[#3a6760]" href="#"><span class="material-symbols-outlined" data-icon="brand_awareness">brand_awareness</span></a>
-<a class="text-[#30332f]/60 hover:text-[#3a6760]" href="#"><span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span></a>
+<footer class="w-full py-12 px-6 mt-20 bg-sky-950 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-amber-500" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="text-lg font-serif text-white font-bold">Psique Mídia</span>
 </div>
+<p class="font-sans text-sm tracking-wide text-slate-300">© 2024 Psique Mídia - Consultório Digital Express</p>
 </div>
-<div>
-<h4 class="font-headline text-lg mb-4">Recursos</h4>
-<ul class="space-y-2 text-sm text-[#30332f]/60">
-<li><a class="hover:text-[#3a6760]" href="#">DSM-5 Resources</a></li>
-<li><a class="hover:text-[#3a6760]" href="#">Blog de Saúde Mental</a></li>
-<li><a class="hover:text-[#3a6760]" href="#">Teste de Ansiedade</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline text-lg mb-4">Links Úteis</h4>
-<ul class="space-y-2 text-sm text-[#30332f]/60">
-<li><a class="hover:text-[#3a6760]" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-[#3a6760]" href="#">Terms of Service</a></li>
-<li><a class="underline text-[#3a6760]" href="#">Contact</a></li>
-</ul>
+<div class="flex gap-8">
+<a class="text-slate-300 hover:text-amber-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">Termos de Uso</a>
+<a class="text-slate-300 hover:text-amber-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-amber-500 hover:text-amber-300 transition-all text-sm font-bold opacity-80 hover:opacity-100" href="#">WhatsApp</a>
 </div>
 </div>
 </footer>
