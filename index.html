@@ -5,8 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Consultório Digital Express | Psique Mídia</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
@@ -14,53 +13,19 @@
         theme: {
           extend: {
             "colors": {
-                    "tertiary-fixed": "#ffd8ec",
-                    "primary": "#f3bd72",
-                    "inverse-primary": "#7f5614",
-                    "surface-container-highest": "#2d363c",
-                    "on-primary-fixed": "#291800",
-                    "tertiary-container": "#4d203e",
-                    "surface-dim": "#0c141a",
-                    "surface": "#0c141a",
-                    "surface-container-lowest": "#070f15",
-                    "on-secondary-fixed": "#001d33",
-                    "on-secondary-fixed-variant": "#2a4965",
-                    "error-container": "#93000a",
-                    "on-surface-variant": "#c3c7ce",
-                    "secondary-container": "#2a4965",
-                    "primary-fixed": "#ffddb3",
-                    "on-error": "#690005",
-                    "primary-fixed-dim": "#f3bd72",
-                    "on-background": "#dbe4ec",
-                    "inverse-surface": "#dbe4ec",
-                    "on-primary-container": "#bf8f49",
-                    "secondary-fixed": "#cee5ff",
-                    "tertiary": "#f4b3d9",
-                    "on-surface": "#dbe4ec",
-                    "primary-container": "#442a00",
-                    "error": "#ffb4ab",
-                    "surface-variant": "#2d363c",
-                    "surface-tint": "#f3bd72",
-                    "surface-container-low": "#141d23",
-                    "outline-variant": "#43474d",
-                    "inverse-on-surface": "#293238",
-                    "secondary-fixed-dim": "#abcaeb",
-                    "on-tertiary": "#4d203f",
-                    "on-tertiary-container": "#c286aa",
-                    "on-primary": "#452b00",
-                    "tertiary-fixed-dim": "#f4b3d9",
-                    "on-secondary-container": "#9ab8d9",
-                    "surface-container": "#182127",
-                    "surface-bright": "#323a41",
-                    "outline": "#8d9198",
-                    "on-tertiary-fixed-variant": "#673656",
-                    "on-secondary": "#11334e",
-                    "on-error-container": "#ffdad6",
-                    "surface-container-high": "#222b31",
-                    "on-primary-fixed-variant": "#633f00",
-                    "background": "#0c141a",
-                    "secondary": "#abcaeb",
-                    "on-tertiary-fixed": "#340a29"
+                    "primary": "#D4A159",
+                    "on-primary": "#10324D",
+                    "background": "#10324D",
+                    "surface": "#163f61",
+                    "surface-container-low": "#123957",
+                    "surface-container-high": "#1b4a70",
+                    "on-surface": "#FFFFFF",
+                    "on-surface-variant": "#BBC4CC",
+                    "outline": "#D4A159",
+                    "outline-variant": "#2a5a82",
+                    "marrom": "#A38554",
+                    "roxo": "#703E5E",
+                    "verde-saude": "#A7DBD1"
             },
             "borderRadius": {
                     "DEFAULT": "0.125rem",
@@ -69,9 +34,9 @@
                     "full": "0.75rem"
             },
             "fontFamily": {
-                    "headline": ["Newsreader", "serif"],
-                    "body": ["Manrope", "sans-serif"],
-                    "label": ["Manrope", "sans-serif"]
+                    "headline": ["Playfair Display", "serif"],
+                    "title": ["Montserrat", "sans-serif"],
+                    "body": ["Open Sans", "sans-serif"]
             }
           },
         },
@@ -81,298 +46,118 @@
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       }
-      .font-newsreader { font-family: 'Newsreader', serif; }
-      .font-manrope { font-family: 'Manrope', sans-serif; }
       .gold-gradient {
-        background: linear-gradient(135deg, #f3bd72 0%, #bf8f49 100%);
+        background: linear-gradient(135deg, #D4A159 0%, #B88A4D 100%);
       }
       .glass-card {
-        background: rgba(45, 54, 60, 0.4);
+        background: rgba(22, 63, 97, 0.4);
         backdrop-filter: blur(20px);
       }
+      body {
+        min-height: max(884px, 100dvh);
+      }
+      /* IDV: Destaque marca-texto marrom para sublinhados de estilo */
+      .highlight-marrom {
+        text-decoration: underline;
+        text-decoration-color: #A38554;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+      /* IDV: Container de citação em Roxo Profundo (Viktor Frankl + elementos criativos) */
+      .quote-box-roxo {
+        background: #703E5E;
+        padding: 1.5rem 2rem;
+        border-radius: 0.5rem;
+      }
+      /* IDV: Ícones verde-saúde para elementos de bem-estar */
+      .icon-verde { color: #A7DBD1; }
+      /* Transição suave para accordion FAQ */
+      .faq-answer {
+        display: none;
+      }
+      .faq-answer.open {
+        display: block;
+      }
+      .faq-icon.open {
+        transform: rotate(180deg);
+      }
+      .faq-icon {
+        transition: transform 0.3s ease;
+      }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background text-on-surface font-manrope selection:bg-primary/30">
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-[#0c141a]/80 backdrop-blur-md bg-gradient-to-b from-[#0c141a] to-transparent">
+<header class="fixed top-0 w-full z-50 bg-[#10324D]/80 backdrop-blur-md">
 <nav class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[#f3bd72] text-2xl">spa</span>
-<span class="text-2xl font-newsreader font-bold text-[#f3bd72] tracking-tight">Psique Mídia</span>
+<span class="material-symbols-outlined text-primary text-2xl">spa</span>
+<span class="text-2xl font-headline font-bold text-primary tracking-tight">Psique Mídia</span>
 </div>
-<button class="hidden md:block bg-primary text-on-primary font-manrope text-xs uppercase tracking-widest px-6 py-2 rounded-full hover:scale-105 transition-transform active:scale-95">
-                Falar com Consultor
+<button class="hidden md:block bg-primary text-on-primary font-title font-bold text-xs uppercase tracking-widest px-6 py-2 rounded-full hover:scale-105 transition-transform active:scale-95" onclick="document.getElementById('hero-form').scrollIntoView({behavior: 'smooth'})">
+                Quero dar o primeiro passo
             </button>
 </nav>
 </header>
 <main class="pt-24">
 <!-- Dobra 1: Hero Section -->
 <section class="relative min-h-[795px] flex flex-col items-center justify-center px-6 py-12 overflow-hidden">
-<div class="absolute inset-0 z-0 opacity-20">
-<img class="w-full h-full object-cover" data-alt="Modern high-end psychological office with minimalist furniture, soft warm lighting, and a serene atmosphere of professional wisdom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6DcAE0FZdkut2orIlJglqRkA4Zdmxbk90U8EqM9SkVYj3XmUknpHAM0jqOhLXhI1rAF9-LMhfwM8srxBxEnkil2gXkU2ksLaTVwLU2SMCHF2YcwECPMw4fX5mEmQQi8S0v6JMotKlSAlNtHQER_QHyPcfJY41O3lNy1F57SRcKyL_2ZQdRRyT4FSpCWzZaMndWML7PYqZACBnAga8rE55daB4c3SxmtPXt-zFxCZL0X1sfHL9qgpgPLQkD1Pt717sPQi2OUd4Nog"/>
+<div class="absolute inset-0 z-0 opacity-15">
+<img alt="Modern high-end psychological office" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6DcAE0FZdkut2orIlJglqRkA4Zdmxbk90U8EqM9SkVYj3XmUknpHAM0jqOhLXhI1rAF9-LMhfwM8srxBxEnkil2gXkU2ksLaTVwLU2SMCHF2YcwECPMw4fX5mEmQQi8S0v6JMotKlSAlNtHQER_QHyPcfJY41O3lNy1F57SRcKyL_2ZQdRRyT4FSpCWzZaMndWML7PYqZACBnAga8rE55daB4c3SxmtPXt-zFxCZL0X1sfHL9qgpgPLQkD1Pt717sPQi2OUd4Nog"/>
 <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
 </div>
 <div class="relative z-10 max-w-4xl text-center space-y-6">
 <h1 class="font-headline text-4xl md:text-6xl font-bold leading-tight text-on-surface italic">
                     Seu Consultório Digital Estruturado e Pronto para Captar Pacientes em até 48 Horas.
                 </h1>
-<p class="font-manrope text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                    Saia da dependência exclusiva de indicações. Implemente uma estrutura de captação ética, validada e 100% alinhada às normas do CFM, CFP e LGPD.
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+<span class="font-bold text-on-surface">Saia da dependência exclusiva de indicações.</span> Implemente uma estrutura de captação ética, validada e 100% alinhada às normas do CFM, CFP e LGPD.
                 </p>
+<!-- Frase de remoção de medo oculto (P3.1) -->
+<p class="font-headline text-xl md:text-2xl text-primary italic mt-2 max-w-xl mx-auto">
+  "Sem precisar entender de marketing ou tecnologia."
+</p>
 <!-- Hero Form -->
-<div class="mt-12 glass-card p-8 rounded-xl border border-white/5 max-w-md mx-auto">
+<div class="mt-12 glass-card p-8 rounded-xl border border-white/5 max-w-md mx-auto" id="hero-form">
 <form class="flex flex-col gap-4">
 <input class="bg-surface-container-low border-b border-outline-variant focus:border-primary transition-colors py-3 px-4 text-on-surface outline-none rounded-t-lg" placeholder="Nome" type="text"/>
-<input class="bg-surface-container-low border-b border-outline-variant focus:border-primary transition-colors py-3 px-4 text-on-surface outline-none" placeholder="WhatsApp" type="tel"/>
-<input class="bg-surface-container-low border-b border-outline-variant focus:border-primary transition-colors py-3 px-4 text-on-surface outline-none rounded-b-lg" placeholder="E-mail" type="email"/>
-<button class="gold-gradient text-on-primary font-bold py-4 rounded-full mt-4 hover:shadow-[0_0_20px_rgba(243,189,114,0.3)] transition-all active:scale-95" type="submit">
-                            Quero meu Consultório Digital Agora
+<input class="bg-surface-container-low border-b border-outline-variant focus:border-primary transition-colors py-3 px-4 text-on-surface outline-none rounded-b-lg" placeholder="WhatsApp" type="tel"/>
+<button class="gold-gradient text-on-primary font-title font-bold py-4 rounded-full mt-4 hover:shadow-[0_0_20px_rgba(212,161,89,0.3)] transition-all active:scale-95" type="submit">
+                            Quero minha estrutura pronta
                         </button>
+<p class="text-[10px] text-on-surface-variant/80 mt-2 text-center uppercase tracking-wider">
+                            Seus dados estão protegidos. Respeitamos a LGPD e o sigilo profissional.
+                        </p>
 </form>
 </div>
 </div>
 </section>
 <!-- Dobra 2: Characteristics -->
-<section class="py-12 bg-surface-container-low">
-<div class="max-w-screen-xl mx-auto px-6 flex flex-wrap justify-around gap-8">
-<div class="flex flex-col items-center gap-3">
-<span class="material-symbols-outlined text-primary text-4xl">bolt</span>
-<span class="font-manrope uppercase tracking-widest text-xs font-semibold">Entrega Expressa</span>
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+<div class="flex flex-col items-center gap-6 text-center">
+<span class="material-symbols-outlined text-primary text-6xl">bolt</span>
+<div>
+  <h3 class="font-title uppercase tracking-[0.2em] text-sm font-bold mb-3">Entrega Expressa</h3>
+  <p class="font-body text-sm text-on-surface-variant max-w-[220px] mx-auto">Sua estrutura montada e pronta para receber acesso em até 48 horas.</p>
 </div>
-<div class="flex flex-col items-center gap-3">
-<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">shield</span>
-<span class="font-manrope uppercase tracking-widest text-xs font-semibold">Compliance Ético</span>
 </div>
-<div class="flex flex-col items-center gap-3">
-<span class="material-symbols-outlined text-primary text-4xl">ads_click</span>
-<span class="font-manrope uppercase tracking-widest text-xs font-semibold">Foco em Conversão</span>
+<div class="flex flex-col items-center gap-6 text-center">
+<span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+<div>
+  <h3 class="font-title uppercase tracking-[0.2em] text-sm font-bold mb-3">Compliance Ético</h3>
+  <p class="font-body text-sm text-on-surface-variant max-w-[220px] mx-auto">Completamente alinhado às diretrizes de publicidade do CFM, CFP e LGPD.</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-6 text-center">
+<span class="material-symbols-outlined text-primary text-6xl">ads_click</span>
+<div>
+  <h3 class="font-title uppercase tracking-[0.2em] text-sm font-bold mb-3">Foco em Conversão</h3>
+  <p class="font-body text-sm text-on-surface-variant max-w-[220px] mx-auto">Layout minimalista e copy estratégica para converter visitantes em pacientes.</p>
+</div>
 </div>
 </div>
 </section>
 <!-- Dobra 3: Problem/Solution -->
 <section class="py-24 px-6 max-w-screen-xl mx-auto">
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div class="space-y-6">
-<h2 class="font-headline text-3xl md:text-5xl italic font-bold text-primary">A Insegurança Digital termina aqui.</h2>
-<div class="space-y-4 text-on-surface-variant text-lg">
-<p>Muitos profissionais de saúde mental vivem na sorte, esperando a próxima indicação ou postando em redes sociais que não convertem em pacientes reais.</p>
-<p class="border-l-4 border-primary pl-6 py-2 italic font-newsreader text-2xl text-on-surface">O Consultório Digital é o seu motor de captação e centro de autoridade inabalável.</p>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-colors"></div>
-<img class="relative rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Confident professional therapist sitting in a modern high-end office, looking at a digital screen with a serene and authoritative expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1SJ4PsJxcKtrZnggJtPvi5QCWJKdMLncvxK4G9BRnCGVp1kQrz05XAXQb7T3z8-PDepi4gb3qIoDuYhA39muFli_g8b1ZkmkTPwjix7wS6ZYD3gdxRt5iCnbOxFQ4lLVePBUIMZ2uOJuWNqO3XapRpjq79zyDnNxPxmZaAL_tIWH64BJLNEFAI18YkP37CPiIvusHkkIAhBKLXS01d3XfqHYhpFXq-JjH4Nt_P-Tvy1j2KM5xBh23WiNQF90wb_tdREL1ipSn_6w"/>
-</div>
-</div>
-</section>
-<!-- Dobra 4: Benefits -->
-<section class="py-24 bg-surface-container-lowest overflow-hidden">
-<div class="max-w-screen-xl mx-auto px-6">
-<div class="grid md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-high p-10 rounded-xl space-y-6 border border-white/5 hover:-translate-y-2 transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-5xl">schedule</span>
-<h3 class="font-headline text-2xl font-bold">Disponibilidade 24/7</h3>
-<p class="text-on-surface-variant">Sua presença profissional nunca dorme. Receba solicitações enquanto foca no que realmente importa.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-high p-10 rounded-xl space-y-6 border border-white/5 hover:-translate-y-2 transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-5xl">verified</span>
-<h3 class="font-headline text-2xl font-bold">Imagem de Elite</h3>
-<p class="text-on-surface-variant">Eleve seu valor percebido com um design editorial que transmite confiança e sofisticação imediata.</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-high p-10 rounded-xl space-y-6 border border-white/5 hover:-translate-y-2 transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-5xl">architecture</span>
-<h3 class="font-headline text-2xl font-bold">Processo Simplificado</h3>
-<p class="text-on-surface-variant">Você foca no atendimento clínico, nós cuidamos de toda a infraestrutura técnica e estratégica.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Dobra 5: For whom -->
-<section class="py-24 px-6 max-w-screen-md mx-auto text-center">
-<h2 class="font-headline text-3xl md:text-4xl mb-12">Para quem é este serviço?</h2>
-<div class="space-y-4 text-left inline-block">
-<div class="flex items-center gap-4 text-lg">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Psicólogos que desejam agenda lotada sem dancinhas.</span>
-</div>
-<div class="flex items-center gap-4 text-lg">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Psiquiatras que precisam de posicionamento premium.</span>
-</div>
-<div class="flex items-center gap-4 text-lg">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Terapeutas sem site ou com baixa captação digital.</span>
-</div>
-<div class="flex items-center gap-4 text-lg">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Profissionais cansados da instabilidade de indicações.</span>
-</div>
-</div>
-</section>
-<!-- Dobra 6: Authority -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-<div class="order-2 md:order-1">
-<img class="rounded-xl shadow-2xl filter brightness-90" data-alt="William Lemmertz, a distinguished and authoritative man in a professional setting, embodying experience, science, and technological innovation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoWR0MtmbMxGm8QlPRqcOovnxCfPGkCznODcEdlrv1FAyoyyGY8WehzdlBO6FX_lJtQFMt1IKas4sRHxpe3JLenETCXISeH1EYELY5g3dT5GXb0j_DshOKjCFeTruKvsUjVMC8BGTfew_n8NjjP-Kx4gqrT-yztHU0BuZkqN90OJt_IiqDMdJLAB9K0id4KA7o-8-b-vc0Ohaw0m8swn22p2Ume6dwRkoFhyKFCDAqgv-3YmrqdLSwPAIlgBRgxGRUWJJ51Ef-oNg"/>
-</div>
-<div class="order-1 md:order-2 space-y-8">
-<h2 class="font-headline text-3xl md:text-5xl font-bold">Liderança, Ética e Inovação.</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">
-                        A <span class="text-primary font-bold">Psique Mídia</span>, sob a liderança de <span class="text-primary font-bold">William Lemmertz</span> — Ex-Tenente e especialista em inovação com IA — traz uma metodologia fundamentada na ciência e no rigor ético. 
-                        Nossa experiência real em saúde mental garante que seu projeto não seja apenas "bonito", mas tecnicamente impecável.
-                    </p>
-<div class="flex gap-4">
-<div class="text-center p-4 bg-background rounded-lg border border-primary/20 flex-1">
-<div class="text-2xl font-bold text-primary italic">Ciência</div>
-<div class="text-xs uppercase opacity-60">Validada</div>
-</div>
-<div class="text-center p-4 bg-background rounded-lg border border-primary/20 flex-1">
-<div class="text-2xl font-bold text-primary italic">Ética</div>
-<div class="text-xs uppercase opacity-60">Absoluta</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Dobra 7: Deliverables -->
-<section class="py-24 px-6 max-w-screen-xl mx-auto">
-<h2 class="font-headline text-3xl md:text-5xl text-center mb-16">O que você recebe no seu Express</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">devices</span>
-<div>
-<p class="font-bold">LP Mobile &amp; Desktop</p>
-<p class="text-sm text-on-surface-variant">Design adaptativo de alta performance.</p>
-</div>
-</div>
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">edit_note</span>
-<div>
-<p class="font-bold">Copy Estratégica</p>
-<p class="text-sm text-on-surface-variant">Textos que conectam e convertem.</p>
-</div>
-</div>
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">chat</span>
-<div>
-<p class="font-bold">WhatsApp Flutuante</p>
-<p class="text-sm text-on-surface-variant">Contato imediato a um clique.</p>
-</div>
-</div>
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">database</span>
-<div>
-<p class="font-bold">Integração de Formulário</p>
-<p class="text-sm text-on-surface-variant">Receba leads direto no seu e-mail.</p>
-</div>
-</div>
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">speed</span>
-<div>
-<p class="font-bold">Hospedagem Performance</p>
-<p class="text-sm text-on-surface-variant">Carregamento instantâneo garantido.</p>
-</div>
-</div>
-<div class="p-6 bg-surface-container rounded-lg border border-white/5 flex gap-4">
-<span class="material-symbols-outlined text-primary">gavel</span>
-<div>
-<p class="font-bold">Ready for LGPD</p>
-<p class="text-sm text-on-surface-variant">Estrutura legalmente segura.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Dobra 8: Bonus -->
-<section class="py-12 px-6">
-<div class="max-w-screen-md mx-auto gold-gradient p-[1px] rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(243,189,114,0.15)]">
-<div class="bg-surface-container-lowest p-8 md:p-12 space-y-6 rounded-2xl">
-<div class="inline-block px-4 py-1 bg-primary/10 text-primary border border-primary/30 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Recurso Exclusivo de Lançamento</div>
-<h3 class="font-headline text-3xl font-bold italic">Guia Prático de Posicionamento Digital</h3>
-<p class="text-on-surface-variant">Mais do que um site, entregamos as recomendações estratégicas para você dominar sua região e nicho de atuação no novo século.</p>
-<div class="flex items-center gap-2 text-primary font-bold">
-<span class="material-symbols-outlined">stars</span>
-<span>Bônus 100% Gratuito na Contratação Express</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Dobra 9: Offer/CTA -->
-<section class="py-32 px-6 text-center relative overflow-hidden">
-<div class="absolute inset-0 z-0 opacity-10">
-<img class="w-full h-full object-cover" data-alt="Abstract serene nature water ripples in soft morning light, creating a peaceful and transformative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyN7Qx__eRSfE4s4SpIuf7o7X064TgHn8Vy8PwT-zfSvDnhf6936B_Sy9J-xwpGFWmLkTdJKkjacV7sdsHM3xUte8Sd4Hd-NLquh3LA6AYWLaAskmaUJkwqICzdyFQiM-uHZ8vm8S0pdg7EUMM4YODZKZ_0yfYhrnjvXU2Gn1gfWbxp3XBP12hOo2gwEeomRmyLOChxbHEvHxGLINK_B0rQJe1IBiiMffLnaNhWG8S6VXinaSXQ05a_qWelLCoxaW866TmnZKspwE"/>
-</div>
-<div class="relative z-10 space-y-10">
-<h2 class="font-headline text-4xl md:text-6xl font-bold">Dê o primeiro passo rumo ao seu Novo Século.</h2>
-<button class="gold-gradient text-on-primary font-bold text-lg px-12 py-5 rounded-full hover:scale-105 transition-transform shadow-xl active:scale-95">
-                    Agendar Consultoria de Perfil Agora
-                </button>
-<p class="text-sm text-on-surface-variant opacity-60">Vagas limitadas para o ciclo de 48 horas.</p>
-</div>
-</section>
-<!-- Dobra 10: FAQ -->
-<section class="py-24 px-6 bg-surface-container-low">
-<div class="max-w-screen-md mx-auto">
-<h2 class="font-headline text-3xl font-bold mb-12 text-center italic">Perguntas Frequentes</h2>
-<div class="space-y-6">
-<div class="border-b border-white/5 pb-4">
-<button class="flex justify-between items-center w-full text-left font-bold text-lg hover:text-primary transition-colors">
-                            Como é possível entregar em 48 horas?
-                            <span class="material-symbols-outlined">expand_more</span>
-</button>
-<p class="mt-4 text-on-surface-variant text-sm">Utilizamos frameworks validados e uma metodologia ágil de implementação, focada no que gera resultado imediato.</p>
-</div>
-<div class="border-b border-white/5 pb-4">
-<button class="flex justify-between items-center w-full text-left font-bold text-lg hover:text-primary transition-colors">
-                            Preciso já ter um domínio (.com.br)?
-                            <span class="material-symbols-outlined">expand_more</span>
-</button>
-<p class="mt-4 text-on-surface-variant text-sm">Se você não tiver, nós orientamos o registro em 5 minutos durante nossa consultoria inicial.</p>
-</div>
-<div class="border-b border-white/5 pb-4">
-<button class="flex justify-between items-center w-full text-left font-bold text-lg hover:text-primary transition-colors">
-                            Terei suporte após a entrega?
-                            <span class="material-symbols-outlined">expand_more</span>
-</button>
-<p class="mt-4 text-on-surface-variant text-sm">Sim, oferecemos 15 dias de acompanhamento técnico para garantir que tudo esteja funcionando perfeitamente.</p>
-</div>
-<div class="border-b border-white/5 pb-4">
-<button class="flex justify-between items-center w-full text-left font-bold text-lg hover:text-primary transition-colors">
-                            O site é ético perante o meu conselho?
-                            <span class="material-symbols-outlined">expand_more</span>
-</button>
-<p class="mt-4 text-on-surface-variant text-sm">Totalmente. Seguimos à risca as normas de publicidade do CFM e CFP, focando em autoridade e informação, não em mercantilismo.</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 px-8 border-t border-white/5 bg-[#0c141a]">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-<div class="flex flex-col items-center md:items-start gap-4">
-<div class="font-newsreader text-xl text-[#f3bd72]">Psique Mídia</div>
-<p class="font-manrope text-xs tracking-wider text-slate-500 text-center md:text-left">
-                    © 2024 Consultório Digital Express por Psique Mídia. Todos os direitos reservados.
-                </p>
-</div>
-<div class="flex flex-wrap justify-center gap-6">
-<a class="font-manrope text-xs tracking-wider text-slate-500 hover:text-white transition-colors" href="#">Termos de Uso</a>
-<a class="font-manrope text-xs tracking-wider text-slate-500 hover:text-white transition-colors" href="#">Política de Privacidade</a>
-<a class="font-manrope text-xs tracking-wider text-slate-500 hover:text-white transition-colors" href="#">Compliance</a>
-<a class="font-manrope text-xs tracking-wider text-slate-500 hover:text-white transition-colors" href="#">Suporte</a>
-</div>
-</div>
-</footer>
-<!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-90 transition-transform flex items-center justify-center" href="#">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-2.32 0-4.591 1.141-5.746 2.903-1.521 2.322-1.488 5.378.079 7.661l-1.031 3.75 3.846-1.01c1.464.845 3.126 1.287 4.853 1.287 5.253 0 9.531-4.277 9.531-9.531 0-5.253-4.278-9.53-9.532-9.53zm5.835 13.045c-.232.662-1.161 1.248-1.562 1.306-.403.058-.802.103-2.314-.492-1.512-.595-2.483-2.126-2.558-2.227-.075-.101-.611-.813-.611-1.55 0-.738.383-1.1.523-1.25.14-.15.308-.188.411-.188s.206.002.296.006c.096.004.225-.036.353.271.127.306.436 1.062.474 1.139.038.077.064.167.013.271s-.077.167-.154.258c-.077.089-.162.2-.232.27-.077.077-.158.162-.068.315.089.15.397.653.852 1.059.585.52 1.077.681 1.231.757.154.075.244.064.334-.039.09-.103.385-.45.488-.604.103-.154.205-.129.346-.077s.9.424 1.054.502c.154.077.256.116.295.18.038.064.038.373-.194 1.035z"></path></svg>
-</a>
-</body></html>
+<div class="grid md:grid-cols-2
